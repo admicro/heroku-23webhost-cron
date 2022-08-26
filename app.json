@@ -1,0 +1,20 @@
+{
+	"name": "heroku-23webhost-cron",
+	"description": "A cron job for 23webhost",
+	"repository": "https://github.com/admicro/heroku-23webhost-cron",
+	"logo": "https://app.23webhost.com/images/logo.png",
+	"website": "https://vn.23webhost.com/",
+	"keywords": ["23webhost", "hoangweb", "thiet ke web"],
+	"stack": "container",
+	"image": "ghcr.io/admicro/backupcron:latest",
+	"env": {
+	    "SITE_URL": {
+	      "description": "site url. ie: https://aliestore.com",
+	      "value": ""
+	    },
+	    "SITE_TOKEN": {
+	      "description": "site password. provided by 23webhost",
+	      "value": ""
+	    }
+	}
+}
